@@ -2,19 +2,14 @@
     "version": 2,
     "builds": [
         {
-            "src": "api/index.js",
+            "src": "/index.js",
             "use": "@vercel/node"
         }
     ],
     "routes": [
         {
             "src": "/(.*)",
-            "dest": "/api/index.js"
+            "dest": "/index.js"
         }
-    ],
-    "env": {
-        "BUTTER_UPS_TOKEN": "@butter_ups_token",
-        "BUTTER_UPS_SRC": "@butter_ups_src",
-        "BUTTER_UPS_VERSION": "@butter_ups_version"
-    }
+    ]
 }
