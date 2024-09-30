@@ -8,7 +8,7 @@ const app = express();
 app.use(express.json());
 
 app.get("/", (req, res) => {
-    return res.status(200).json("Server is running...")
+    return res.status(200).json({ message: "Buttercloth ups api" })
 });
 
 const getTransitInfo = async (payload) => {
